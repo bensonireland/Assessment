@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bar">
+        <ul class="navheader">
+            <li><a href="homepage.html"><img class="resize2" src="images/illustr8-logo.jpg"></a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="homepage.html">Contacts</a></li>
+            <li><a href="pageone.html">Clients</a></li>
+            <li><a href="homepage.html">Biography</a></li>
+            <li><a href="pageone.html">Image Gallery </a></li>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+
+    </div>
+
+    
+    <div class="introduction">
+        
+        <div class="maintext">
+            <strong>Showcasing Images</strong>
+        </div> 
+        <div class="secondtext">
+            By James Wakelin
+        </div>
+        <div class="downarrow">
+            <a href="#C4"><img src="images/white-down-arrow-png-2-300x300.png" width="15%"></a>
+        </div>
+
+    </div>
+
+<div class="about">
+    <h2 id="C4">
+    <div class="maintext">
+            <strong>About</strong>
+        </div>
+        <div class="abouttext">
+            gjkdfgbkjgk
+        </div>
+    m<br>mChapter 4</h2>
+    </div>
+    <div class="images">
+        <div class="imageslides">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img class="resize1" src="images/westfieldsnowman-small.jpg">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img class="resize1" src="images/vendingmachine-small.jpg">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img class="resize1" src="images/jean-luc-small.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img class="resize1" src="images/home-small.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img class="resize1" src="images/error-message-small.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img class="resize1" src="images/drink-small.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img class="resize1" src="images/pukeko-small.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            </div>
+
+
+
+
+
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+
+
+
+
+
+
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+            </script>
+
+        </div>
+
+    m<br>m<h2 id="C4">Chapter 4</h2>
+    </div>
+</body>
